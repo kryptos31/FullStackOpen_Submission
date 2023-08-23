@@ -1,12 +1,7 @@
 
 ```mermaid
 sequenceDiagram
-Alice->>John: Hello John, how are you?
-loop Healthcheck
-    John->>John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John-->>Alice: Great!
-John->>Bob: How about you?
-Bob-->>John: Jolly good!
+Browser->>Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+Note left of Server: Server requests new HTTP GET with URL redirect
+Server->>Browser: Great!
 ```
